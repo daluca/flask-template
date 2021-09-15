@@ -21,6 +21,8 @@ flake8-logging-format = "*"
 flake8-import-order = "*"
 pep8-naming = "*"
 tox = "*"
+pytest = "*"
+pytest-flask = "*"
 
 [requires]
 python_version = "3.9"

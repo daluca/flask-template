@@ -4,3 +4,7 @@
 # tox
 .tox/
 *.egg-info/
+
+# pytest
+.pytest_cache/
+__pycache__/

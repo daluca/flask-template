@@ -1,3 +1,7 @@
 [flake8]
 max-line-length = 119
 statistics = True
+
+ignore = 
+    # S101: test for use of assert
+    S101
