@@ -24,4 +24,8 @@ jobs:
           pipenv install --dev --system --ignore-pipfile
 
       - name: lint with flake8
+        continue-on-error: true
         run: flake8
+
+      - name: tox
+        run: tox
