@@ -12,10 +12,10 @@ jobs:
       - name: checkout repository
         uses: actions/checkout@v2
 
-      - name: setup python ${{ matrix.python-version }}
+      - name: setup python
         uses: actions/setup-python@v2
         with:
-          python-version: ${{ matrix.python-version }}
+          python-version: "3.9"
           architecture: x64
 
       - name: install tox
