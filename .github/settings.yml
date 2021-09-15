@@ -39,4 +39,5 @@ branches:
         strict: true
         contexts: ['Linting']
       enforce_admins: true
+      required_linear_history: true
       restrictions: null
