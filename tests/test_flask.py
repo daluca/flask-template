@@ -13,4 +13,4 @@ def test_python_version():
     y = f"{x = }"
 
     assert y == "x = 6"
-    assert y == str
+    assert type(y) == str
