@@ -24,4 +24,4 @@ jobs:
           pipenv install --dev --system --ignore-pipfile
 
       - name: lint with flake8
-        run: flake8 src/
+        run: flake8 --statistics src/
