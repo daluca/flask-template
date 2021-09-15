@@ -7,7 +7,7 @@ from flask import Flask
 def create_app(gunicorn_logger=None) -> Flask.app_context:
     """Flask application."""
     app = Flask(__name__)
-    app.config.from_object('config.Config')
+    app.config.from_object("config.Config")
 
     if gunicorn_logger is not None:
         app.logger.handlers = gunicorn_logger.handlers
