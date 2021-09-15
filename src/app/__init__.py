@@ -1,6 +1,5 @@
 """Initialise Flask application."""
 import logging
-
 from flask import Flask
 
 
