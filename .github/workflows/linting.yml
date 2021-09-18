@@ -15,11 +15,11 @@ jobs:
       - name: setup python
         uses: actions/setup-python@v2
         with:
-          python-version: "3.x"
+          python-version: "3.9"
           architecture: x64
 
       - name: install tox
-        run: python -m pip install tox
+        run: python -m pip install tox tox-gh-actions
 
       - name: flake8 via tox
-        run: tox
+        run: tox -e flake8

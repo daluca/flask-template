@@ -4,3 +4,14 @@
 # tox
 .tox/
 *.egg-info/
+
+# pytest
+.pytest_cache/
+__pycache__/
+.coverage
+
+# environment variable
+.env
+
+# virtual environments
+.venv/
