@@ -22,7 +22,8 @@ flake8-import-order = "*"
 pep8-naming = "*"
 tox = "*"
 pytest = "*"
-pytest-flask = "*"
+pytest-cov = "*"
+tox-pipenv = "*"
 
 [requires]
 python_version = "3.9"
