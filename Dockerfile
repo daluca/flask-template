@@ -9,8 +9,8 @@ RUN python -m pip install --upgrade pip setuptools pipenv && \
     pipenv install --system --ignore-pipfile && \
     rm -f Pipfile Pipfile.lock
 
-COPY src/ .
+COPY project/ project/
 
 EXPOSE 8000/tcp
 
-ENTRYPOINT [ "gunicorn", "wsgi" ]
+ENTRYPOINT [ "gunicorn", "project.wsgi", "--config=project/gunicorn.conf.py" ]
