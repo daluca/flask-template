@@ -35,5 +35,5 @@ config_map = {
     "production": ProductionConfig,
     "staging": StagingConfig,
     "development": DevelopmentConfig,
-    "testing": TestingConfig
+    "testing": TestingConfig,
 }
