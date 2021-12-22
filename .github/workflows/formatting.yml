@@ -1,0 +1,20 @@
+---
+name: formatting
+
+on:
+  pull_request:
+
+jobs:
+  formatting:
+    name: black
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v2
+
+      - name: black check
+        uses: jpetrucciani/black-check@21.12b0
+        with:
+          path: .
+          black_flags: --check --diff --color
